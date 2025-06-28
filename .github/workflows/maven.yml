@@ -23,6 +23,7 @@ jobs:
 
     - name: 🛠️ Build with Maven
       run: mvn clean install
+      working-directory: ecommerce
 
     - name: 📦 Upload JAR as artifact
       uses: actions/upload-artifact@v4
